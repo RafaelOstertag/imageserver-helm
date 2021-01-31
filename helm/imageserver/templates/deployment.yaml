@@ -48,6 +48,12 @@ spec:
               value: "8080"
             - name: IMAGES_DIRECTORY
               value: "/data"
+            - name: QUARKUS_LOG_HANDLER_GELF_ENABLED
+              value: "true"
+            - name: QUARKUS_LOG_HANDLER_GELF_HOST
+              value: "udp:192.168.100.3"
+            - name: QUARKUS_LOG_HANDLER_GELF_PORT
+              value: "12201"
           ports:
             - name: http
               containerPort: 8080
