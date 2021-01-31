@@ -44,8 +44,6 @@ spec:
               path: /q/health/ready
               port: http
           env:
-            - name: PORT
-              value: "8080"
             - name: IMAGES_DIRECTORY
               value: "/data"
             - name: QUARKUS_LOG_HANDLER_GELF_ENABLED
