@@ -52,6 +52,8 @@ spec:
               value: "udp:192.168.100.3"
             - name: QUARKUS_LOG_HANDLER_GELF_PORT
               value: "12201"
+            - name: K8S_PODNAME
+              value: "imageserver"
           ports:
             - name: http
               containerPort: 8080

@@ -1,5 +1,4 @@
-{{/* @formatter:off
-*/}}
+{{/* @formatter:off */}}
 {{- if .Values.ingress.enabled -}}
 {{- $fullName := include "imageserver.fullname" . -}}
 {{- $svcPort := .Values.service.port -}}
