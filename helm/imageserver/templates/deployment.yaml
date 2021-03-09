@@ -39,6 +39,7 @@ spec:
               path: /q/health/live
               port: http
             initialDelaySeconds: 20
+            timeoutSeconds: 2
           readinessProbe:
             httpGet:
               path: /q/health/ready
