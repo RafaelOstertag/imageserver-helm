@@ -44,6 +44,8 @@ spec:
             httpGet:
               path: /q/health/ready
               port: http
+            initialDelaySeconds: 20
+            timeoutSeconds: 2
           env:
             - name: IMAGES_DIRECTORY
               value: "/data"
