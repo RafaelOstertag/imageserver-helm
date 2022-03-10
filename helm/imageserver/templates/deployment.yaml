@@ -62,10 +62,14 @@ spec:
           volumeMounts:
             - mountPath: /data
               name: pv-0
+            - mountPath: /tmp
+              name: tmp-volume
       volumes:
       - name: pv-0
         persistentVolumeClaim:
           claimName: nfs-0
+      - name: tmp-volume
+        emptyDir: { }
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
